@@ -30,7 +30,7 @@ rsp=pkts[0][0][1]
 next_seq+=1
 next_ack=rsp[TCP].seq+1
 
-tcp = TCP(seq=next_seq, ack=next_ack, flags="R", sport=sport, dport=21)
+tcp = TCP(seq=next_seq, ack=next_ack, flags="F", sport=sport, dport=21)
 
 p = ether/ip/tcp
 pkts=sendp(p)
