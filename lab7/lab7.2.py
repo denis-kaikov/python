@@ -52,3 +52,4 @@ s2.close()
 
 get_mes()
 send_ack(b'QUIT\r\n')
+s.close()
