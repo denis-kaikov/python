@@ -26,7 +26,7 @@ try:
             break
         elif splt[start]=="T":
             s.settimeout(int(splt[start+1]))
-            print("Setting timeout to", int(splt[1]) )
+            print("Setting timeout to", int(splt[start+1]) )
         else: print("Response from ('127.0.0.1', 10000): " + rsp.decode(), end ="")
 except socket.timeout:
     print("Timeout expired, quitting")
